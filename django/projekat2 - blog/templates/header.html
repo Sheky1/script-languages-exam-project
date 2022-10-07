@@ -1,0 +1,21 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="{% url 'demo_app:todos' %}">
+        <img
+            src="{% static 'img/todologo.png' %}"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt="logo"
+        />
+    </a>
+    <div class="btn-group" role="group" aria-label="Basic outlined example">
+        <a href="{% url 'demo_app:todos' %}" style = "margin-bottom: 15px;">
+            <button type="button" class="btn btn-outline-primary">Todos</button>
+        </a>
+        <a href="{% url 'demo_app:notes' %}" style = "margin-bottom: 15px;">
+            <button type="button" class="btn btn-outline-primary">Notes</button>
+        </a>
+    </div>
+</nav>
